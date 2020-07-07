@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 // import './PemOrder.css';
 
 const colorPen = [
-    {id:1,background:'red',width:'20px',height:'20px'},
-    {id:2,background:'blue',width:'20px',height:'20px'},
+    {id:1,background:'magenta',width:'20px',height:'20px'},
+    {id:2,background:'#f2da',width:'20px',height:'20px'},
     {id:3,background:'green',width:'20px',height:'20px'},
     {id:4,background:'orange',width:'20px',height:'20px'},
     {id:5,background:'black',width:'20px',height:'20px'}

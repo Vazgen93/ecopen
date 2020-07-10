@@ -40,6 +40,10 @@ const HeaderStyle = {
 class Header extends Component {
   constructor(props) {
     super(props);
+
+    this.state={
+      leng:0
+    }
   }
 
   render() {
@@ -72,9 +76,9 @@ class Header extends Component {
           </nav>
           <div className="langauge">
             <select name="" id="">
-              <option value="AM">AM</option>
-              <option value="EN">EN</option>
-              <option value="RU"></option>
+              <option id="0" value="AM">AM</option>
+              <option id="1" value="EN">EN</option>
+              <option id="2" value="RU">RUS</option>
             </select>
           </div>
       </header>

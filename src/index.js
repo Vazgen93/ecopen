@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Ecopen from './Ecopen';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Ecopen />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

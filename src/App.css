@@ -27,3 +27,9 @@ body{
   height: 100%;
   display: flex;
 }
+
+.langauge{
+  position: absolute;
+  right: 50px;
+  top: 25px;
+}

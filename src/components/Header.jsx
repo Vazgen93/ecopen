@@ -74,7 +74,7 @@ class Header extends Component {
             <select name="" id="">
               <option value="AM">AM</option>
               <option value="EN">EN</option>
-              <option value="RU"></option>
+              <option value="RU">RU</option>
             </select>
           </div>
       </header>
@@ -83,7 +83,6 @@ class Header extends Component {
         dots 
         autoplay='true'
         autoplaySpeed='10000'
-
         >
           <div>
             <h3>1</h3>

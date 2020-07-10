@@ -1,13 +1,8 @@
 import React,{Component} from 'react';
+import ColorPen from './colors';
 // import './PemOrder.css';
 
-const colorPen = [
-    {id:1,background:'magenta',width:'20px',height:'20px'},
-    {id:2,background:'#f2da',width:'20px',height:'20px'},
-    {id:3,background:'green',width:'20px',height:'20px'},
-    {id:4,background:'orange',width:'20px',height:'20px'},
-    {id:5,background:'black',width:'20px',height:'20px'}
-]
+
 
 class PenOrder extends Component{
     constructor(props){
@@ -41,9 +36,9 @@ class PenOrder extends Component{
 
                 <div className="block2">
                     <div className="color_pen">
-                        <ul>
+                        <ul className='color_'>
                         {
-                            colorPen.map((e)=>(
+                            ColorPen.map((e)=>(
                             <li key={e.id} style={e}>{e.color}</li>
                             ))
                         }

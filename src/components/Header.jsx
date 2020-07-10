@@ -2,39 +2,44 @@ import React, { Component } from "react";
 import logo from '../img/logo.png'
 import order from '../img/order.png'
 import Slider from "infinite-react-carousel";
+import SliderImg1 from '../img/1.png';
+import SliderImg2 from '../img/2.png';
+import SliderImg3 from '../img/3.png';
+import move from '../img/move.png';
 const HeaderStyle = {
   header:{
     width: '100%',
     height: '96px',
     background: '#e7e7e7',
     display: 'flex',
-    'align-items': 'center',
-    'justify-content':' space-between',
-    padding: '0px 129px'
+    alignItems: 'center',
+    justifyContent:' space-between',
+    padding: '0px 129px',
+    borderBottom: '2px solid #7e8182'
   },
   logo:{
-    width: '280px',
-    height: '66px'
+    width: '250px',
+    height: '50px'
   },
   navigation: {
     height: '100%',
     display: 'flex',
-    'justify-content':'center',
-    'align-items': 'center',
+    justifyContent:'center',
+    alignItems: 'center',
     
   },
   navigationLink: {
     margin: '0px 15px'
   },
   link:{
-    color:'#83ad1d',
-    'font-size': '18px',
-    'text-transform': 'uppercase'
+    color:'#87af24',
+    fontSize: '18px',
+    textTransform: 'uppercase'
   },
   order:{
     width : '15px',
     height: '15px',
-    'margin-left': '10px'
+    marginLeft: '10px'
   }
 }
 class Header extends Component {
@@ -70,36 +75,25 @@ class Header extends Component {
               </li>
             </ul>
           </nav>
-          <div className="langauge">
-            <select name="" id="">
-              <option value="AM">AM</option>
-              <option value="EN">EN</option>
-              <option value="RU">RU</option>
-            </select>
-          </div>
+          <div></div> 
       </header>
       <Slider 
         className='slider'
-        dots 
-        autoplay='true'
-        autoplaySpeed='10000'
+        autoplay={true}
+        autoplaySpeed={10000}
         >
-          <div>
-            <h3>1</h3>
+          <div style={HeaderStyle.sliderContainer}>
+            <img src={SliderImg1} alt="" style={HeaderStyle.sliderImg}/>
           </div>
-          <div>
-            <h3>2</h3>
+          <div style={HeaderStyle.sliderContainer}>
+            <img src={SliderImg2} alt="" style={HeaderStyle.sliderImg}/>
           </div>
-          <div>
-            <h3>3</h3>
+          <div style={HeaderStyle.sliderContainer}>
+            <img src={SliderImg3} alt="" style={HeaderStyle.sliderImg}/>
           </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
+          
         </Slider>
+        <img src={move} alt="" className="move"/>
       </div>
     );
   }

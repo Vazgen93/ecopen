@@ -5,9 +5,9 @@ import ColorPen from './colors';
 
 
 class PenOrder extends Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
 
     render(){
         return(

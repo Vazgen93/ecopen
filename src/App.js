@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PenOrder from './PenOrder/PenOrder';
 import Language from './components/Language';
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
+import Btn from './components/btns/Order'
 
 class App extends Component {
   constructor(props){
@@ -20,21 +21,24 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <div className="langauge">
-            <select name="" id="" onChange={this.LanguageValue}>
-              <option value="AM">AM</option>
-              <option value="EN">EN</option>
-              <option value="RU">RU</option>
-            </select>
-          </div>
-        <Header 
-        home={Language[this.state.len].HeaderNav.home}
-        about={Language[this.state.len].HeaderNav.about}
-        library={Language[this.state.len].HeaderNav.labrary}
-        workers={Language[this.state.len].HeaderNav.workers}
-        order={Language[this.state.len].HeaderNav.order}
-        
-        />
+        <div className="container">
+          <div className="langauge">
+              <select name="" id="" onChange={this.LanguageValue}>
+                <option value="AM">AM</option>
+                <option value="EN">EN</option>
+                <option value="RU">RU</option>
+              </select>
+            </div>
+          <Header 
+          home={Language[this.state.len].HeaderNav.home}
+          about={Language[this.state.len].HeaderNav.about}
+          library={Language[this.state.len].HeaderNav.labrary}
+          workers={Language[this.state.len].HeaderNav.workers}
+          order={Language[this.state.len].HeaderNav.order}
+          
+          />
+          <Btn name={Language[this.state.len].HeaderNav.order}/>
+        </div>
         <PenOrder />
       </div>
     );

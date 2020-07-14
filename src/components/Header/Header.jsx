@@ -1,47 +1,15 @@
 import React, { Component } from "react";
-import logo from '../img/logo.png'
-import order from '../img/order.png'
+import './header.css';
+import logo from '../../img/logo.png'
+import order from '../../img/order.png'
 import Slider from "infinite-react-carousel";
-import SliderImg1 from '../img/1.png';
-import SliderImg2 from '../img/2.png';
-import SliderImg3 from '../img/3.png';
-import move from '../img/move.png';
-const HeaderStyle = {
-  header:{
-    width: '100%',
-    height: '96px',
-    background: '#e7e7e7',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent:' space-between',
-    padding: '0px 129px',
-    borderBottom: '2px solid #7e8182'
-  },
-  logo:{
-    width: '250px',
-    height: '50px'
-  },
-  navigation: {
-    height: '100%',
-    display: 'flex',
-    justifyContent:'center',
-    alignItems: 'center',
-    
-  },
-  navigationLink: {
-    margin: '0px 15px'
-  },
-  link:{
-    color:'#87af24',
-    fontSize: '18px',
-    textTransform: 'uppercase'
-  },
-  order:{
-    width : '15px',
-    height: '15px',
-    marginLeft: '10px'
-  }
-}
+import SliderImg1 from '../../img/1.png';
+import SliderImg2 from '../../img/2.png';
+import SliderImg3 from '../../img/3.png';
+import move from '../../img/move.png';
+import facebook from '../../img/facebook.png';
+import instagram from '../../img/instagram.png';
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -50,27 +18,27 @@ class Header extends Component {
   render() {
     return (
       <div className="container">
-        <header style={HeaderStyle.header}>
+        <header >
           <div className="logo">
-            <img src={logo} alt="" style={HeaderStyle.logo}/>
+            <img src={logo} alt=""/>
           </div>
-          <nav>
-            <ul style={HeaderStyle.navigation}>
-              <li style={HeaderStyle.navigationLink}>
-                <a style={HeaderStyle.link} href="">{this.props.home}</a>
+          <nav className="header_navigation">
+            <ul >
+              <li >
+                <a  href="">{this.props.home}</a>
               </li>
-              <li style={HeaderStyle.navigationLink}>
-                <a style={HeaderStyle.link} href="">{this.props.about}</a>
+              <li >
+                <a  href="">{this.props.about}</a>
               </li>
-              <li style={HeaderStyle.navigationLink}>
-                <a style={HeaderStyle.link} href="">{this.props.library}</a>
+              <li >
+                <a  href="">{this.props.library}</a>
               </li>
-              <li style={HeaderStyle.navigationLik}>
-                <a style={HeaderStyle.link} href="">{this.props.workers}</a>
+              <li>
+                <a  href="">{this.props.workers}</a>
               </li>
-              <li style={HeaderStyle.navigationLink}>
-                <a style={HeaderStyle.link} href="">{this.props.order}
-                <img style={HeaderStyle.order} src={order} alt=""/>
+              <li >
+                <a  href="">{this.props.order}
+                <img className='order' src={order} alt=""/>
                 </a>
               </li>
             </ul>
@@ -81,19 +49,29 @@ class Header extends Component {
         className='slider'
         autoplay={true}
         autoplaySpeed={10000}
+        arrows={false}
         >
-          <div style={HeaderStyle.sliderContainer}>
-            <img src={SliderImg1} alt="" style={HeaderStyle.sliderImg}/>
+          <div >
+            <img src={SliderImg1} alt=""/>
           </div>
-          <div style={HeaderStyle.sliderContainer}>
-            <img src={SliderImg2} alt="" style={HeaderStyle.sliderImg}/>
+          <div >
+            <img src={SliderImg2} alt=""/>
           </div>
-          <div style={HeaderStyle.sliderContainer}>
-            <img src={SliderImg3} alt="" style={HeaderStyle.sliderImg}/>
+          <div >
+            <img src={SliderImg3} alt=""/>
           </div>
           
         </Slider>
+        
         <img src={move} alt="" className="move"/>
+        <div className="soc_contacts">
+          <a href="">
+            <img src={facebook} alt=""/>
+          </a>
+          <a href="">
+           <img src={instagram} alt=""/>
+          </a>
+        </div>
       </div>
     );
   }

@@ -25,12 +25,32 @@
     font-family: "Segoe UI";
     font-weight: 400;
     text-transform: uppercase;
-    box-shadow: 0px 10px #334900;
+    border: 2px solid transparent;
     transform-style: preserve-3d;
     transition: .3s;
+    
 }
-.btn > button:hover {
-    transform: translateY(-5px);
+.btn > button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff ;
+    border: 2px solid #83ad1d;
+    transform-origin: left;
+    transition: .3s;
+    transform: scaleX(0);
+    z-index: -1;
+}
+.btn > button:hover{
+    color: #83ad1d;
+    
+}
+.btn > button:hover::before {
+    transform: scaleX(1);
+}
+::-webkit-scrollbar{
 
-    box-shadow:0px 10px #334900, 0px 10px 20px   #000;
 }

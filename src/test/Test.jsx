@@ -25,7 +25,7 @@ class Test extends Component{
 
         shouldComponentUpdate(nextProps, nextState){
             if(this.state.obj !== nextState.obj){
-                console.log('state');
+                console.log('');
                 return true
             }
 
@@ -35,7 +35,7 @@ class Test extends Component{
                 
             }
             // console.log(nextProps);
-            console.log('false');
+            console.log('hello');
             
             return false 
         

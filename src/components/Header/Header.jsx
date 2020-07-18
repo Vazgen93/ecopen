@@ -31,10 +31,10 @@ class Header extends Component {
                 <a  href="">{this.props.about}</a>
               </li>
               <li >
-                <a  href="">{this.props.library}</a>
+                <a  href="">{this.props.gallery}</a>
               </li>
               <li>
-                <a  href="">{this.props.workers}</a>
+                <a  href="">{this.props.partners}</a>
               </li>
               <li >
                 <a  href="">{this.props.order}

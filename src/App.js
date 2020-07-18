@@ -3,7 +3,8 @@ import PenOrder from './PenOrder/PenOrder';
 import Language from './components/Language';
 import './App.css';
 import Header from './components/Header/Header';
-import Btn from './components/btns/Order'
+import Btn from './components/btns/Order';
+import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs'
 
 class App extends Component {
   constructor(props){
@@ -32,14 +33,21 @@ class App extends Component {
           <Header 
           home={Language[this.state.len].HeaderNav.home}
           about={Language[this.state.len].HeaderNav.about}
-          library={Language[this.state.len].HeaderNav.labrary}
-          workers={Language[this.state.len].HeaderNav.workers}
+          gallery={Language[this.state.len].HeaderNav.gallery}
+          partners={Language[this.state.len].HeaderNav.partners}
           order={Language[this.state.len].HeaderNav.order}
           
           />
           <Btn name={Language[this.state.len].HeaderNav.order}/>
         </div>
-        <PenOrder />
+        <WhyChooseUs 
+          name={Language[this.state.len].ecopen}
+          title={Language[this.state.len].WhyChooseUs}
+          ecology= {Language[this.state.len].cardText.ecology}
+          quality= {Language[this.state.len].cardText.quality}
+          stylish= {Language[this.state.len].cardText.stylish}
+          
+        />
       </div>
     );
   }

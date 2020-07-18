@@ -64,8 +64,8 @@ class Header extends Component {
           
         </Slider>
         <Btn
-          // startActiv={this.props.activ}
-          name={Language[this.props.len].HeaderNav.order}
+          startActiv={this.props.activ}
+          name={this.props.len}
         />
         <img src={move} alt="" className="move"/>
         <div className="soc_contacts">

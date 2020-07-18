@@ -20,6 +20,8 @@ class ElabakyanInfo extends Component {
           library={Language[this.props.len].HeaderNav.gallery}
           workers={Language[this.props.len].HeaderNav.partners}
           order={Language[this.props.len].HeaderNav.order}
+          activ ={this.props.activ}
+          len={Language[this.props.len].HeaderNav.order}
         />
         
         <WhyChooseUs

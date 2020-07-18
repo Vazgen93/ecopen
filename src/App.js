@@ -31,6 +31,7 @@ class App extends Component {
                 <option value="AM">AM</option>
                 <option value="EN">EN</option>
                 <option value="RU">RU</option>
+                
               </select>
             </div>
             

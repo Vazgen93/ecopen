@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import ElbakyanInfo from './components/elbakyanInfo'
 import PenOrder from './PenOrder/PenOrder';
-import Language from './components/Language';
 import './App.css';
-import Header from './components/Header/Header';
-import Btn from './components/btns/Order'
+
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      len: 'AM'
+      len: 'AM',
+      activ:false
     }
   }
   LanguageValue = (e) => {
@@ -18,6 +18,11 @@ class App extends Component {
       len: e.target.value
     })   
   }
+
+  startEctiv = ()=>{
+    this.setState({activ:!this.state.activ})
+  }
+
   render(){
     return (
       <div className="App">
@@ -29,17 +34,15 @@ class App extends Component {
                 <option value="RU">RU</option>
               </select>
             </div>
-          <Header 
-          home={Language[this.state.len].HeaderNav.home}
-          about={Language[this.state.len].HeaderNav.about}
-          library={Language[this.state.len].HeaderNav.labrary}
-          workers={Language[this.state.len].HeaderNav.workers}
-          order={Language[this.state.len].HeaderNav.order}
-          
-          />
-          <Btn name={Language[this.state.len].HeaderNav.order}/>
+            
+          {
+            (!this.state.activ)?<ElbakyanInfo activ={this.startEctiv} len={this.state.len}/>:''
+          }
         </div>
-        <PenOrder />
+        {
+          (this.state.activ)?<PenOrder />:''
+        }
+        
       </div>
     );
   }

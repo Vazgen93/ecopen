@@ -35,7 +35,7 @@ class Test extends Component{
                 
             }
             // console.log(nextProps);
-            console.log('hello');
+            console.log('helloo');
             
             return false 
         

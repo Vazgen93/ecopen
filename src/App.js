@@ -26,7 +26,6 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <div className="container">
           <div className="langauge">
               <select name="" id="" onChange={this.LanguageValue}>
                 <option value="AM">AM</option>
@@ -38,7 +37,6 @@ class App extends Component {
           {
             (!this.state.activ)?<ElbakyanInfo activ={this.startEctiv} len={this.state.len}/>:''
           }
-        </div>
         {
           (this.state.activ)?<PenOrder />:''
         }

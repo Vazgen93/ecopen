@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+.WhyChooseUs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title > h2{
+color: #83ad1d;
+font-size: 43px;
+font-weight: 700;
+letter-spacing: 0.43px;
+text-transform: lowercase;
+}
+.title > span{
+    color: #199135;
+    font-size: 55px;
+    padding-left: 25px;
+    font-family: 'Fondamento', cursive;
+    font-weight: 400;
+    }
+.content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    width: 297px;
+    height: 353px;
+    background-color: #83ad1d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+  
+}
+.card p {
+    font-size: 38px;
+    font-weight: bold;
+    color: #83ad1d;
+    -webkit-text-stroke: 2px #fff;
+}
+.card > img {
+    width: 125px;
+    height: 115px;
+}

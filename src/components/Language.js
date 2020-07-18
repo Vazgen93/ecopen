@@ -1,29 +1,50 @@
 export default {
     AM: {
+        ecopen: 'EcoPen',
         HeaderNav: {
             home: "Գլխավոր",
             about: "մեր մասին",
-            labrary: "տեսականի",
-            workers: "գործընկերներ",
+            gallery: "տեսականի",
+            partners: "գործընկերներ",
             order: "պատվիրել"
+        },
+        WhyChooseUs: 'ինչու՞ ընտրել',
+        cardText: {
+            ecology: 'Էկոլոգիա',
+            quality: 'Որակ',
+            stylish: 'Նորաոճ'
         }
     },
     EN: {
+        ecopen: 'EcoPen',
         HeaderNav: {
             home: "home",
             about: "about",
-            labrary: "larary",
-            workers: "workers",
-            order: "order"
+            gallery: "Gallery",
+            partners: "Partners",
+            order: "Order online"
+        },
+        WhyChooseUs: 'Why Choose Us',
+        cardText: {
+            ecology: 'Ecology',
+            quality: 'Quality',
+            stylish: 'Stylish'
         }
     },
     RU: {
+        ecopen: 'EcoPen',
         HeaderNav: {
             home: "Главная",
             about: "О-нас",
-            labrary: "Осортимент",
-            workers: "Сотрудник",
+            gallery: "Галерея",
+            partners: "Партнеры",
             order: "Заказать"
+        },
+        WhyChooseUs: 'Почему выбрать ',
+        cardText: {
+            ecology: 'Экология',
+            quality: 'Качество',
+            stylish: 'Модный'
         }
     }
 }

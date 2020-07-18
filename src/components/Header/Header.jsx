@@ -9,6 +9,7 @@ import SliderImg3 from '../../img/3.png';
 import move from '../../img/move.png';
 import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
+import Btn from "../btns/Order";
 
 class Header extends Component {
   constructor(props) {
@@ -62,7 +63,10 @@ class Header extends Component {
           </div>
           
         </Slider>
-        
+        <Btn
+          // startActiv={this.props.activ}
+          name={Language[this.props.len].HeaderNav.order}
+        />
         <img src={move} alt="" className="move"/>
         <div className="soc_contacts">
           <a href="">

@@ -4,7 +4,7 @@ export default {
         HeaderNav: {
             home: "Գլխավոր",
             about: "մեր մասին",
-            gallery: "տեսականի",
+            gallery: "տեսադարան",
             partners: "գործընկերներ",
             order: "պատվիրել"
         },

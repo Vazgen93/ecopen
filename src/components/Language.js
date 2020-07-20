@@ -13,6 +13,14 @@ export default {
             ecology: 'Էկոլոգիա',
             quality: 'Որակ',
             stylish: 'Նորաոճ'
+        },
+        penOrder:{
+            main:'Գլխավոր Էջ',
+            heading:'Ընտրեք ձեր գրիչի արտաքին տեսքը',
+            penColor:'Գրիչի գույնը',
+            pointSize:'Միջուկի հաստություն',
+            inkColor:'Միջուկի գույնը',
+
         }
     },
     EN: {
@@ -29,6 +37,13 @@ export default {
             ecology: 'Ecology',
             quality: 'Quality',
             stylish: 'Stylish'
+        },
+        penOrder:{
+            main:'home page',
+            heading:'Choose the appearance of your pen',
+            penColor:'Pen color',
+            pointSize:'Point size',
+            inkColor:'Ink color',
         }
     },
     RU: {
@@ -45,6 +60,13 @@ export default {
             ecology: 'Экология',
             quality: 'Качество',
             stylish: 'Модный'
+        },
+        penOrder:{
+            main:'главная страница',
+            heading:'Выберите внешний вид вашей ручки',
+            penColor:'Цвет ручки',
+            pointSize:'Толщина стержня',
+            inkColor:'Цвет стержня',
         }
     }
 }

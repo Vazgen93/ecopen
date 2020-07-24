@@ -13,7 +13,7 @@ class Block extends Component {
        <div className={this.props.class}>
            <img src={this.props.img} alt=""/>
            <div className="content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore molestias voluptates, dignissimos repellat, cum atque beatae molestiae quibusdam vel error tenetur veniam? Suscipit, accusamus. Quidem accusantium iure autem blanditiis quas.Deleniti voluptatum sit, fugit culpa doloribus nisi asperiores cum nam quam delectus numquam molestiae magnam enim praesentium cumque quo eligendi! Non sequi molestiae iure et voluptatem esse voluptates, quasi veritatis.
+                {this.props.text}
            </div>
        </div>
       </div>

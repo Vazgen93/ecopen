@@ -1,8 +1,6 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   outline: none;
   text-decoration: none;
   list-style: none;
@@ -11,6 +9,7 @@
 body{
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 .App{
   position: relative;
@@ -35,10 +34,6 @@ body{
 .slider:nth-of-type(1) {
   height: calc(100% - 96px);
 }
-.slider:nth-of-type(2) {
-  height: calc(100% - 96px);
-}
-
 .move {
   width: 20px;
   position: absolute;
@@ -47,6 +42,7 @@ body{
   display: flex;
   z-index: 1;
   cursor: pointer;
+
 
 }
 .slider > div {
@@ -63,6 +59,12 @@ body{
   right: 50px;
   top: 40px;
   z-index: 10;
+}
+@media (max-width:1200px){
+  .langauge{
+    top: 25px;
+    right: 70px;
+  }
 }
 .langauge > select {
   border:  2px solid #87af24;

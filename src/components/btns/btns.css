@@ -1,4 +1,4 @@
-.btn{
+.order_btn{
     width: 300px;
     height: 100px;
     border: 6px solid #ffffff;
@@ -10,10 +10,10 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    perspective: 500px;
+
  
 }
-.btn > button {
+.order_btn > button {
     width: 100%;
     height: 100%;
     background-color: #83ad1d;
@@ -31,7 +31,7 @@
     transition: .3s;
     
 }
-.btn > button::before {
+.order_btn > button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -45,13 +45,10 @@
     transform: scaleX(0);
     z-index: -1;
 }
-.btn > button:hover{
+.order_btn > button:hover{
     color: #83ad1d;
     
 }
-.btn > button:hover::before {
+.order_btn > button:hover::before {
     transform: scaleX(1);
-}
-::-webkit-scrollbar{
-
 }

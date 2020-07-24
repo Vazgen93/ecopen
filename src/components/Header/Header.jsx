@@ -11,20 +11,103 @@ import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
 import Btn from "../btns/Order";
 
+const style= {
+ isShow: {
+   transform: 'scaleX(0)'
+ },
+  burger: {
+    none: {
+      display:'block'
+    },
+    close: {
+      one:{
+        transform: 'rotate(0deg)'
+      },
+      two:{
+        transform: 'rotate(-0deg)'
+      }
+    }
+  }
+}
+
+
+if (window.innerWidth < 1201) {
+  style.isShow.transform = 'scaleX(0)'
+}else{
+  style.isShow.transform = 'scaleX(1)'
+}
 class Header extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isShow: true,
+    }
+    
+  }
+  ShowMenue=  () => {
+    if (this.state.isShow == true) {
+      style.isShow = {
+        transform: 'scaleX(1)'
+      }
+      style.burger ={
+        none: {
+          display:'none'
+        },
+        close: {
+          one:{
+            position: 'absolute',
+            transform: 'rotate(45deg)'
+          },
+          two:{
+            position: 'absolute',
+            transform: 'rotate(-45deg)'
+          }
+        }
+      }
+      this.setState({
+        isShow: false
+      })
+    }else{
+      style.isShow = {
+        transform: 'scaleX(0)'
+      }
+      style.burger ={
+        none: {
+          display:'block'
+        },
+        close: {
+          one:{
+            transform: 'rotate(0deg)'
+          },
+          two:{
+            transform: 'rotate(-0deg)'
+          }
+        }
+      }
+      this.setState({
+        isShow: true
+      })
+    }
+
+      
+    
+    
   }
 
   render() {
     return (
       <div className="container">
         <header >
+          <div className="burger" onClick={this.ShowMenue}>
+            <span style={style.burger.none}></span>
+            <span style={style.burger.close.one}></span>
+            <span style={style.burger.close.two}></span>
+          </div>
           <div className="logo">
             <img src={logo} alt=""/>
           </div>
           <nav className="header_navigation">
-            <ul >
+            <ul style={style.isShow}>
               <li >
                 <a  href="">{this.props.home}</a>
               </li>

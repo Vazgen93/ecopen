@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './slider2.css'
 import Slider from "infinite-react-carousel";
-import Galery from './Galery'
+import ParentsImg from './ParentsImg'
 
 class Slider2 extends Component {
   constructor(props) {
@@ -21,10 +21,10 @@ class Slider2 extends Component {
             className='slider_2'
             centerMode={true}
             autoplay={true}
-            autoplaySpeed={5000}
+            autoplaySpeed={2000}
             arrows={false}
           >
-            {Galery.map(res => {
+            {ParentsImg.map(res => {
               const bg = {
                 backgroundImage: `url(${res})`
               }

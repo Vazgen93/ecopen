@@ -132,7 +132,7 @@ class Header extends Component {
       <Slider 
         className='slider'
         autoplay={true}
-        autoplaySpeed={10000}
+        autoplaySpeed={3000}
         arrows={false}
         >
           <div >
@@ -152,11 +152,11 @@ class Header extends Component {
         />
         <img src={move} alt="" className="move"/>
         <div className="soc_contacts">
-          <a href="">
-            <img src={facebook} alt=""/>
+          <a href="https://www.facebook.com/EcoPenArmenia" target="blank">
+            <img src={facebook} alt="https://www.facebook.com/EcoPenArmenia"/>
           </a>
-          <a href="">
-           <img src={instagram} alt=""/>
+          <a href="https://www.instagram.com/ecopen.am/" target="blank">
+           <img src={instagram} alt="https://www.instagram.com/ecopen.am/"/>
           </a>
         </div>
       </div>

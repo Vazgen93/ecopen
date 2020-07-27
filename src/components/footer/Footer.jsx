@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './footer.css'
-import footerBg from '../../img/footer.jpeg'
+import footerBg from '../../img/footer.png'
 
 
 class F extends Component {

@@ -19,7 +19,7 @@ class Slider1 extends Component {
             </div>
           <Slider
             ref={c => (this.slider = c)}
-            slidesToShow={5}
+            slidesToShow={3}
             className='slider_1'
             centerMode={true}
           >

@@ -65,6 +65,9 @@ body{
     top: 25px;
     right: 70px;
   }
+  .container{
+    height: 50%;
+  }
 }
 .langauge > select {
   border:  2px solid #87af24;

@@ -7,6 +7,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 .title{
     width: 100%;
     height: 20%;
@@ -56,3 +57,21 @@ text-transform: lowercase;
     width: 125px;
     height: 115px;
 }
+
+@media (max-width:1200px) {
+   .card{
+
+       margin: 0px 5px;
+   } 
+}
+@media (max-width: 770px) {
+   .content{
+       flex-direction: column;
+       width: 100%;
+      
+   }
+   .card{
+       width: 80%;
+       margin: 5px 0;
+   }
+ }

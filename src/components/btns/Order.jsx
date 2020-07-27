@@ -13,7 +13,7 @@ class Btn extends Component {
 
   render() {
     return (
-      <div className="bttn">
+      <div className="order_btn">
           <button onClick={this.props.startActiv}>{this.props.name}</button>
          
       </div>

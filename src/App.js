@@ -39,10 +39,10 @@ class App extends Component {
             </div>
             
           {
-            (!this.state.activ)?<ElbakyanInfo activ={this.startEctiv} len={this.state.len}/>:''
+            (this.state.activ)?<ElbakyanInfo activ={this.startEctiv} len={this.state.len}/>:''
           }
         {
-          (this.state.activ)?<PenOrder act={this.startEctiv} language={Language[this.state.len].penOrder}/>:''
+          (!this.state.activ)?<PenOrder act={this.startEctiv} language={Language[this.state.len].penOrder}/>:''
         }
         
       </div>

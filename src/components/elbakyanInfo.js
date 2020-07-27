@@ -5,7 +5,11 @@ import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 import Block from './block/block';
 import pen1 from '../img/pen1.png';
 import pen2 from '../img/pen2.png';
-import Slider1 from './slider1/Slider1';
+import pen3 from '../img/pen3.png';
+import pen4 from '../img/pen4.png';
+import Slider1 from './slider/Slider1';
+import Slider2 from './slider/Slider2';
+import Footer from './footer/Footer'
 
 class ElabakyanInfo extends Component {
   constructor(props) {
@@ -35,15 +39,36 @@ class ElabakyanInfo extends Component {
           stylish={Language[this.props.len].cardText.stylish}
         />
         <Block 
-          class='block1'
+          class='block-1'
           img={pen1}
+          text={Language[this.props.len].text1}
         />
         <Block 
-          class='block2'
+          class='block-2'
           img={pen2}
+          text={Language[this.props.len].text2}
         />
+        
         <Slider1 
           title={Language[this.props.len].HeaderNav.gallery}
+        />
+        <Block 
+          class='block-3'
+          img={pen3}
+          text={Language[this.props.len].text2}
+        />
+        <Block 
+          class='block-4'
+          img={pen4}
+          text={Language[this.props.len].text2}
+        />
+        <Slider2 
+          title={Language[this.props.len].HeaderNav.partners}
+        />
+        <Footer 
+          addres={Language[this.props.len].addres}
+          mail={Language[this.props.len].mail}
+          tel={Language[this.props.len].tel}
         />
       </Fragment>
     );

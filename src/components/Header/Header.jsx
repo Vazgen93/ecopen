@@ -11,20 +11,103 @@ import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
 import Btn from "../btns/Order";
 
+const style= {
+ isShow: {
+   transform: 'scaleX(0)'
+ },
+  burger: {
+    none: {
+      display:'block'
+    },
+    close: {
+      one:{
+        transform: 'rotate(0deg)'
+      },
+      two:{
+        transform: 'rotate(-0deg)'
+      }
+    }
+  }
+}
+
+
+if (window.innerWidth < 1201) {
+  style.isShow.transform = 'scaleX(0)'
+}else{
+  style.isShow.transform = 'scaleX(1)'
+}
 class Header extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isShow: true,
+    }
+    
+  }
+  ShowMenue=  () => {
+    if (this.state.isShow == true) {
+      style.isShow = {
+        transform: 'scaleX(1)'
+      }
+      style.burger ={
+        none: {
+          display:'none'
+        },
+        close: {
+          one:{
+            position: 'absolute',
+            transform: 'rotate(45deg)'
+          },
+          two:{
+            position: 'absolute',
+            transform: 'rotate(-45deg)'
+          }
+        }
+      }
+      this.setState({
+        isShow: false
+      })
+    }else{
+      style.isShow = {
+        transform: 'scaleX(0)'
+      }
+      style.burger ={
+        none: {
+          display:'block'
+        },
+        close: {
+          one:{
+            transform: 'rotate(0deg)'
+          },
+          two:{
+            transform: 'rotate(-0deg)'
+          }
+        }
+      }
+      this.setState({
+        isShow: true
+      })
+    }
+
+      
+    
+    
   }
 
   render() {
     return (
       <div className="container">
         <header >
+          <div className="burger" onClick={this.ShowMenue}>
+            <span style={style.burger.none}></span>
+            <span style={style.burger.close.one}></span>
+            <span style={style.burger.close.two}></span>
+          </div>
           <div className="logo">
             <img src={logo} alt=""/>
           </div>
           <nav className="header_navigation">
-            <ul >
+            <ul style={style.isShow}>
               <li >
                 <a  href="">{this.props.home}</a>
               </li>
@@ -49,7 +132,7 @@ class Header extends Component {
       <Slider 
         className='slider'
         autoplay={true}
-        autoplaySpeed={10000}
+        autoplaySpeed={3000}
         arrows={false}
         >
           <div >
@@ -69,11 +152,11 @@ class Header extends Component {
         />
         <img src={move} alt="" className="move"/>
         <div className="soc_contacts">
-          <a href="">
-            <img src={facebook} alt=""/>
+          <a href="https://www.facebook.com/EcoPenArmenia" target="blank">
+            <img src={facebook} alt="https://www.facebook.com/EcoPenArmenia"/>
           </a>
-          <a href="">
-           <img src={instagram} alt=""/>
+          <a href="https://www.instagram.com/ecopen.am/" target="blank">
+           <img src={instagram} alt="https://www.instagram.com/ecopen.am/"/>
           </a>
         </div>
       </div>

@@ -295,7 +295,7 @@ class PenOrder extends Component{
                     </div>       
             </div>
 
-            <div className="container container_basket">
+            <div className="container_basket">
                 {
                     this.state.arr.map(({penColor,pointSize,inkColor,penImg,quantity},i)=>(
                         <Basket key={i} 

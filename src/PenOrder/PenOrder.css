@@ -246,3 +246,22 @@
     justify-content: center;
 }
 
+
+
+.container_basket{
+    overflow-y: scroll;
+    height: 40vw;
+}
+
+.container_basket::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  .container_basket::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(19, 175, 19, 0.3);
+  }
+   
+  .container_basket::-webkit-scrollbar-thumb {
+    background-color: rgb(169, 169, 169);
+    outline: 1px solid rgb(117, 144, 112);
+  }

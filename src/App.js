@@ -10,7 +10,7 @@ class App extends Component {
     super(props)
     this.state = {
       len: 'AM',
-      activ:true
+      activ:false
     }
   }
   LanguageValue = (e) => {

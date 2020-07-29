@@ -7,6 +7,7 @@ export default  [
     {id:6,background:'rgb(240, 179, 73)'},
     {id:7,background:'rgb(212, 100, 22)'},
     {id:8,background:'rgb(225, 220, 237)'},
+    {id:9,background:'rgb(181, 217, 238)'},
     {id:11,background:'rgb(165, 154, 152)'},
     {id:12,background:'rgb(150, 104, 133)'},
     {id:13,background:'rgb(21, 72, 115)'},

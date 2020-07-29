@@ -18,6 +18,17 @@
   left: 5vw;
 }
 
+.buy,.count{
+  position: static;
+}
+.count{
+  width: 4vw;
+  height: 2vw;
+}
+.rem_btn{
+  position: static;
+  height: 3.7vw;
+}
 .btn:hover {
   background-color: rgb(203, 218, 167);
 }

@@ -95,6 +95,14 @@ class PenOrder extends Component{
     add = ()=>{
         info.push(this.state.pen)
         this.setState({arr:info})
+        this.setState({pen:{
+            penColor:this.state.pen.penColor,
+            inkColor:this.state.pen.inkColor,
+            pointSize:this.state.pen.pointSize,
+            penImg:this.state.pen.penImg,
+            pointSize:this.state.pen.pointSize,
+            quantity:1
+        }})
         // let gumar = 0;
         // this.state.arr.map(({quantity})=>{
         //     gumar+=quantity

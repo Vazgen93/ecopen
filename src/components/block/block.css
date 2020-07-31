@@ -160,3 +160,21 @@
     z-index: 1;
 }
 
+
+@media (max-width: 1200px) {
+    .block-2 > .content {
+    
+        height: 200px;
+
+    }
+ 
+    .block-3 > .content {
+        margin: 50px 0px;
+        height: 200px;
+
+    }
+    .block-4 > .content {
+        height: 200px;
+
+    }
+}

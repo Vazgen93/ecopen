@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import './slider2.css'
 import Slider from "infinite-react-carousel";
 import ParentsImg from './ParentsImg'
-
+console.log(ParentsImg);
 class Slider2 extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
+
+    
     return (
       <div className="container">
           <div className="slider2">

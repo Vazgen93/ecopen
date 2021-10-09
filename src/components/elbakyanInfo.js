@@ -38,11 +38,11 @@ class ElabakyanInfo extends Component {
           quality={Language[this.props.len].cardText.quality}
           stylish={Language[this.props.len].cardText.stylish}
         />
-        <Block 
-          class='block-1'
-          img={pen1}
-          text={Language[this.props.len].text1}
-        />
+        {/*<Block */}
+        {/*  class='block-1'*/}
+        {/*  img={pen1}*/}
+        {/*  text={Language[this.props.len].text1}*/}
+        {/*/>*/}
         <Block 
           class='block-2'
           img={pen2}

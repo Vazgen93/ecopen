@@ -250,7 +250,7 @@
 
 .container_basket{
     overflow-y: scroll;
-    height: 40vw;
+    /*height: 40vw;*/
 }
 
 .container_basket::-webkit-scrollbar {

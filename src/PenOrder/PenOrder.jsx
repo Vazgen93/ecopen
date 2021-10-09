@@ -280,20 +280,20 @@ class PenOrder extends Component{
 
             </div>
             
-            <div className="penOrder_info">
-                     <div>
-                        <p>{this.props.language.pensInfo.price1}</p>
-                        <p>{this.props.language.pensInfo.price2}</p>
-                        <p>{this.props.language.pensInfo.price3}</p>
-                        <p>{this.props.language.pensInfo.infDop}</p>
-                    </div>
+            {/*<div className="penOrder_info">*/}
+            {/*         <div>*/}
+            {/*            <p>{this.props.language.pensInfo.price1}</p>*/}
+            {/*            <p>{this.props.language.pensInfo.price2}</p>*/}
+            {/*            <p>{this.props.language.pensInfo.price3}</p>*/}
+            {/*            <p>{this.props.language.pensInfo.infDop}</p>*/}
+            {/*        </div>*/}
 
-                    <div className="pen_price">
-                            <p>{this.props.language.price}:</p>
-                            <p>{this.state.cost}</p>
-                            <p>{this.props.language.amd}</p>
-                    </div>       
-            </div>
+            {/*        <div className="pen_price">*/}
+            {/*                <p>{this.props.language.price}:</p>*/}
+            {/*                <p>{this.state.cost}</p>*/}
+            {/*                <p>{this.props.language.amd}</p>*/}
+            {/*        </div>       */}
+            {/*</div>*/}
 
             <div className="container_basket">
                 {
